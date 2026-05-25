@@ -116,7 +116,8 @@ class Project {
                     storageArray.splice(index, 1);
                 }
             }
-            localStorage.setItem('project', JSON.stringify(storageArray));
+            // localStorage.setItem('project', JSON.stringify(storageArray));
+            putData(storageArray);
 
             this.cardEl.remove();
         });
